@@ -175,6 +175,7 @@ def quickSort(arr, left="", right=""):
         partitionIndex = partition(arr, left, right)
         quickSort(arr, left, partitionIndex - 1)
         quickSort(arr, partitionIndex + 1, right)
+        
     return arr
 print(quickSort([31,1,423,12,1234,34,12,41,2,34,12,43,12,42,23]))
 
